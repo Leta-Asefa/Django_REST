@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <title>Bootstrap 5 Navbar</title>
+  <style>
+    .carousel-caption {
+      position: absolute;
+      top: 0; /* Position at the top of the image */
+      width: auto;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+      color: red;
+    }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="Images/logo.jpg" alt="Logo" height="60">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto fs-3">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="HTML/store.html">Store</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="HTML/post.html">Post</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <div class="carousel-caption" >
+              <h1>Buy Your Dream Phone</h1>
+          </div>
+          <img src="Images/carousel_1.jpg" height="560" class="d-block w-100" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/carousel_2.jpg" height="560" class="d-block w-100" alt="Image 2">
+        <div class="carousel-caption">
+            <h1 >Discover The World</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/carousel_3.webp" height="560" class="d-block w-100" alt="Image 3">
+        <div class="carousel-caption">
+            <h1 >Save the Moment</h1>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+</body>
+</html>

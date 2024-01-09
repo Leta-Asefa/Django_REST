@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <title>Bootstrap 5 Navbar</title>
+  <style>
+    .carousel-caption {
+      position: absolute;
+      top: 0; /* Position at the top of the image */
+      width: auto;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+      color: red;
+    }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="../Images/logo.jpg" alt="Logo" height="60">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto fs-3">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Store</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="post.html">Post</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-3">
+    <div class="input-group mb-3">
+
+        <label for="exampleSelect" class="input-group-text">Search By</label>
+        <select class="form-select" id="exampleSelect" aria-label="Select example">
+          <option selected>Brand</option>
+          <option value="option1">Price</option>
+          <option value="option2">RAM</option>
+          <option value="option3">Storage</option>
+        </select>
+
+      <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="searchButton">
+      <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+      
+    </div>
+  </div>
+
+<div class="container" id="container">
+    <div class="row row-col-3 ">
+
+        <div class="col-4">
+                <div class="card" style="width: 25rem;">
+                  <img src="../Images/carousel_1.jpg" class="card-img-top" alt="Phone Image" height="200">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">iPhone</h5>
+                    <div class="row row-col-2">
+                        <div class="col-6">Model = Pro max</div>
+                        <div class="col-6">RAM = 8GB</div>
+                        <div class="col-6">Storage = 256GB</div>
+                        <div class="col-6">Camera = 20MP</div>
+                        <div class="col-6">Selfie = 5MP</div>
+                        <div class="col-6">Color = Red</div>
+                        <div class="col-6">OS = Apple</div>
+                        <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
+                        <div class="col-6"><b>Price = 500 Birr</b></div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+
+
+
+        <div class="col-4">
+            <div class="card" style="width: 25rem;">
+              <img src="../Images/carousel_2.jpg" class="card-img-top" alt="Phone Image" height="200">
+              <div class="card-body">
+                <h5 class="card-title text-center">iPhone</h5>
+                <div class="row row-col-2">
+                    <div class="col-6">Model = Pro max</div>
+                    <div class="col-6">RAM = 8GB</div>
+                    <div class="col-6">Storage = 256GB</div>
+                    <div class="col-6">Camera = 20MP</div>
+                    <div class="col-6">Selfie = 5MP</div>
+                    <div class="col-6">Color = Red</div>
+                    <div class="col-6">OS = Apple</div>
+                    <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
+                    <div class="col-6"><b>Price = 500 Birr</b></div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+
+
+    <div class="col-4">
+        <div class="card" style="width: 25rem;">
+          <img src="../Images/carousel_4.jpg" class="card-img-top" alt="Phone Image" height="200">
+          <div class="card-body">
+            <h5 class="card-title text-center">iPhone</h5>
+            <div class="row row-col-2">
+                <div class="col-6">Model = Pro max</div>
+                <div class="col-6">RAM = 8GB</div>
+                <div class="col-6">Storage = 256GB</div>
+                <div class="col-6">Camera = 20MP</div>
+                <div class="col-6">Selfie = 5MP</div>
+                <div class="col-6">Color = Red</div>
+                <div class="col-6">OS = Apple</div>
+                <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
+                <div class="col-6"><b>Price = 500 Birr</b></div>
+            </div>
+          </div>
+      </div>
+</div>
+
+
+
+
+<div class="col-4">
+    <div class="card" style="width: 25rem;">
+      <img src="../Images/carousel_2.jpg" class="card-img-top" alt="Phone Image" height="200">
+      <div class="card-body">
+        <h5 class="card-title text-center">iPhone</h5>
+        <div class="row row-col-2">
+            <div class="col-6">Model = Pro max</div>
+            <div class="col-6">RAM = 8GB</div>
+            <div class="col-6">Storage = 256GB</div>
+            <div class="col-6">Camera = 20MP</div>
+            <div class="col-6">Selfie = 5MP</div>
+            <div class="col-6">Color = Red</div>
+            <div class="col-6">OS = Apple</div>
+            <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
+            <div class="col-6"><b>Price = 500 Birr</b></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="col-4">
+    <div class="card" style="width: 25rem;">
+      <img src="../Images/carousel_1.jpg" class="card-img-top" alt="Phone Image" height="200">
+      <div class="card-body">
+        <h5 class="card-title text-center">iPhone</h5>
+        <div class="row row-col-2">
+            <div class="col-6">Model = Pro max</div>
+            <div class="col-6">RAM = 8GB</div>
+            <div class="col-6">Storage = 256GB</div>
+            <div class="col-6">Camera = 20MP</div>
+            <div class="col-6">Selfie = 5MP</div>
+            <div class="col-6">Color = Red</div>
+            <div class="col-6">OS = Apple</div>
+            <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
+            <div class="col-6"><b>Price = 500 Birr</b></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="col-4">
+    <div class="card" style="width: 25rem;">
+      <img src="../Images/carousel_4.jpg" class="card-img-top" alt="Phone Image" height="200">
+      <div class="card-body">
+        <h5 class="card-title text-center">iPhone</h5>
+        <div class="row row-col-2">
+            <div class="col-6">Model = Pro max</div>
+            <div class="col-6">RAM = 8GB</div>
+            <div class="col-6">Storage = 256GB</div>
+            <div class="col-6">Camera = 20MP</div>
+            <div class="col-6">Selfie = 5MP</div>
+            <div class="col-6">Color = Red</div>
+            <div class="col-6">OS = Apple</div>
+            <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
+            <div class="col-6"><b>Price = 500 Birr</b></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="col-4">
+    <div class="card" style="width: 25rem;">
+      <img src="../Images/carousel_1.jpg" class="card-img-top" alt="Phone Image" height="200">
+      <div class="card-body">
+        <h5 class="card-title text-center">iPhone</h5>
+        <div class="row row-col-2">
+            <div class="col-6">Model = Pro max</div>
+            <div class="col-6">RAM = 8GB</div>
+            <div class="col-6">Storage = 256GB</div>
+            <div class="col-6">Camera = 20MP</div>
+            <div class="col-6">Selfie = 5MP</div>
+            <div class="col-6">Color = Red</div>
+            <div class="col-6">OS = Apple</div>
+            <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
+            <div class="col-6"><b>Price = 500 Birr</b></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+    </div>
+
+</div>
+
+
+<br><br><br><br><br><br><br>
+</body>
+</html>

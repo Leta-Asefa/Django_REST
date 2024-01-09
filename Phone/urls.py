@@ -20,5 +20,11 @@ from Phone import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('phones/',views.getAllPhones)
+    path('addPhone/',views.addPhone),
+    path('getPhones/',views.getPhones),
+    path('getPhoneById/<int:id>',views.getPhoneById),
+    path('getPhoneByBrand/<str:brandName>',views.getPhoneByBrand),
+    path('getPhoneByPrice/<int:amount>',views.getPhoneByPrice),
+    path('updatePhone/<int:id>',views.updatePhone),
+    path('deletePhone/<int:id>',views.deletePhone)
 ]
