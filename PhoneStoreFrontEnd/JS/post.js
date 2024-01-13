@@ -14,6 +14,7 @@ submitButton = document.getElementById('submitButton')
 
 
 submitButton.onclick = function () {
+    console.log('sent')
 
     let data =[ {
         "brand": brand.value,
@@ -26,7 +27,6 @@ submitButton.onclick = function () {
         "price": price.value,
         "os": os.value,
         "isActive": isActive.value,
-        "Email": email.value,
         "image": image.value
     } ]
 
@@ -34,7 +34,6 @@ submitButton.onclick = function () {
 
 
     let jsonData = JSON.stringify(data)
-
 
 
     fetch("http://localhost:8000/addPhone/", {
@@ -46,7 +45,7 @@ submitButton.onclick = function () {
     
     }).then((res) => res.text())
         .then((data) => console.log(data))
-
+        .catch((err) => console.log(err))
 
 }
 

@@ -14,11 +14,32 @@
       background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
       color: red;
     }
+    .fixed-height-card {
+            height: 500px; /* Set the height to your desired value */
+        }
+
+        /* Use object-fit to scale and maintain image clarity */
+        .card-img-top {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+      
+      .card-width{ width: 20rem;}
+      .fontsize{
+        font-size: 0.8rem;
+      }
+      .available{
+        color: rgb(5, 255, 5);
+      }
+      .sold{
+        color: rgb(255, 0, 0);
+      }
     </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255, 255, 255);">
   <a class="navbar-brand" href="#">
     <img src="../Images/logo.jpg" alt="Logo" height="60">
   </a>
@@ -37,10 +58,10 @@
         <a class="nav-link" href="post.html">Post</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#about">About</a>
       </li>
     </ul>
   </div>
@@ -64,23 +85,23 @@
   </div>
 
 <div class="container" id="container">
-    <div class="row row-col-3 ">
+    <div class="row row-col-3">
 
-        <div class="col-4">
-                <div class="card" style="width: 25rem;">
-                  <img src="../Images/carousel_1.jpg" class="card-img-top" alt="Phone Image" height="200">
+        <div class="col">
+                <div class="card fixed-height-card card-width mt-3">
+                  <img src="../Images/carousel_1.jpg" class="card-img-top img-fluid" alt="Phone Image" >
                   <div class="card-body">
                     <h5 class="card-title text-center">iPhone</h5>
-                    <div class="row row-col-2">
-                        <div class="col-6">Model = Pro max</div>
-                        <div class="col-6">RAM = 8GB</div>
-                        <div class="col-6">Storage = 256GB</div>
-                        <div class="col-6">Camera = 20MP</div>
-                        <div class="col-6">Selfie = 5MP</div>
-                        <div class="col-6">Color = Red</div>
-                        <div class="col-6">OS = Apple</div>
-                        <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
-                        <div class="col-6"><b>Price = 500 Birr</b></div>
+                    <div class="row row-col-2 fontsize">
+                        <div class="col-7">Model = Pro max</div>
+                        <div class="col-5">RAM = 8GB</div>
+                        <div class="col-7">Storage = 256GB</div>
+                        <div class="col-5">Camera = 20MP</div>
+                        <div class="col-7">Selfie = 5MP</div>
+                        <div class="col-5">Color = Red</div>
+                        <div class="col-7">OS = Apple</div>
+                        <div class="col-5 sold" ><b>Sold</b></div>
+                        <div class="col-7"><b>Price = 500 Birr</b></div>
                     </div>
                   </div>
               </div>
@@ -88,21 +109,21 @@
 
 
 
-        <div class="col-4">
-            <div class="card" style="width: 25rem;">
-              <img src="../Images/carousel_2.jpg" class="card-img-top" alt="Phone Image" height="200">
+        <div class="col">
+            <div class="card fixed-height-card card-width mt-3" >
+              <img src="../Images/carousel_2.jpg" class="card-img-top img-fluid" alt="Phone Image" >
               <div class="card-body">
                 <h5 class="card-title text-center">iPhone</h5>
-                <div class="row row-col-2">
-                    <div class="col-6">Model = Pro max</div>
-                    <div class="col-6">RAM = 8GB</div>
-                    <div class="col-6">Storage = 256GB</div>
-                    <div class="col-6">Camera = 20MP</div>
-                    <div class="col-6">Selfie = 5MP</div>
-                    <div class="col-6">Color = Red</div>
-                    <div class="col-6">OS = Apple</div>
-                    <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
-                    <div class="col-6"><b>Price = 500 Birr</b></div>
+                <div class="row row-col-2 fontsize">
+                  <div class="col-7">Model = Pro max</div>
+                  <div class="col-5">RAM = 8GB</div>
+                  <div class="col-7">Storage = 256GB</div>
+                  <div class="col-5">Camera = 20MP</div>
+                  <div class="col-7">Selfie = 5MP</div>
+                  <div class="col-5">Color = Red</div>
+                  <div class="col-7">OS = Apple</div>
+                  <div class="col-5 available" ><b>Available</b></div>
+                  <div class="col-7"><b>Price = 500 Birr</b></div>
                 </div>
               </div>
           </div>
@@ -110,21 +131,21 @@
 
 
 
-    <div class="col-4">
-        <div class="card" style="width: 25rem;">
-          <img src="../Images/carousel_4.jpg" class="card-img-top" alt="Phone Image" height="200">
+    <div class="col ">
+        <div class="card fixed-height-card  card-width mt-3" >
+          <img src="../Images/carousel_4.jpg" class="card-img-top img-fluid" alt="Phone Image"  >
           <div class="card-body">
             <h5 class="card-title text-center">iPhone</h5>
-            <div class="row row-col-2">
-                <div class="col-6">Model = Pro max</div>
-                <div class="col-6">RAM = 8GB</div>
-                <div class="col-6">Storage = 256GB</div>
-                <div class="col-6">Camera = 20MP</div>
-                <div class="col-6">Selfie = 5MP</div>
-                <div class="col-6">Color = Red</div>
-                <div class="col-6">OS = Apple</div>
-                <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
-                <div class="col-6"><b>Price = 500 Birr</b></div>
+            <div class="row row-col-2 fontsize">
+              <div class="col-7">Model = Pro max</div>
+                        <div class="col-5">RAM = 8GB</div>
+                        <div class="col-7">Storage = 256GB</div>
+                        <div class="col-5">Camera = 20MP</div>
+                        <div class="col-7">Selfie = 5MP</div>
+                        <div class="col-5">Color = Red</div>
+                        <div class="col-7">OS = Apple</div>
+                        <div class="col-5 available" ><b>Available</b></div>
+                        <div class="col-7"><b>Price = 500 Birr</b></div>
             </div>
           </div>
       </div>
@@ -132,95 +153,600 @@
 
 
 
-
-<div class="col-4">
-    <div class="card" style="width: 25rem;">
-      <img src="../Images/carousel_2.jpg" class="card-img-top" alt="Phone Image" height="200">
-      <div class="card-body">
-        <h5 class="card-title text-center">iPhone</h5>
-        <div class="row row-col-2">
-            <div class="col-6">Model = Pro max</div>
-            <div class="col-6">RAM = 8GB</div>
-            <div class="col-6">Storage = 256GB</div>
-            <div class="col-6">Camera = 20MP</div>
-            <div class="col-6">Selfie = 5MP</div>
-            <div class="col-6">Color = Red</div>
-            <div class="col-6">OS = Apple</div>
-            <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
-            <div class="col-6"><b>Price = 500 Birr</b></div>
-        </div>
+<div class="col">
+  <div class="card fixed-height-card card-width mt-3">
+    <img src="../Images/carousel_1.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+    <div class="card-body">
+      <h5 class="card-title text-center">iPhone</h5>
+      <div class="row row-col-2 fontsize">
+          <div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 sold" ><b>Sold</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
       </div>
-  </div>
+    </div>
+</div>
 </div>
 
 
 
-
-<div class="col-4">
-    <div class="card" style="width: 25rem;">
-      <img src="../Images/carousel_1.jpg" class="card-img-top" alt="Phone Image" height="200">
-      <div class="card-body">
-        <h5 class="card-title text-center">iPhone</h5>
-        <div class="row row-col-2">
-            <div class="col-6">Model = Pro max</div>
-            <div class="col-6">RAM = 8GB</div>
-            <div class="col-6">Storage = 256GB</div>
-            <div class="col-6">Camera = 20MP</div>
-            <div class="col-6">Selfie = 5MP</div>
-            <div class="col-6">Color = Red</div>
-            <div class="col-6">OS = Apple</div>
-            <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
-            <div class="col-6"><b>Price = 500 Birr</b></div>
-        </div>
-      </div>
+<div class="col">
+<div class="card fixed-height-card card-width mt-3" >
+<img src="../Images/carousel_2.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+<div class="card-body">
+  <h5 class="card-title text-center">iPhone</h5>
+  <div class="row row-col-2 fontsize">
+    <div class="col-7">Model = Pro max</div>
+    <div class="col-5">RAM = 8GB</div>
+    <div class="col-7">Storage = 256GB</div>
+    <div class="col-5">Camera = 20MP</div>
+    <div class="col-7">Selfie = 5MP</div>
+    <div class="col-5">Color = Red</div>
+    <div class="col-7">OS = Apple</div>
+    <div class="col-5 available" ><b>Available</b></div>
+    <div class="col-7"><b>Price = 500 Birr</b></div>
   </div>
+</div>
+</div>
 </div>
 
 
 
-
-<div class="col-4">
-    <div class="card" style="width: 25rem;">
-      <img src="../Images/carousel_4.jpg" class="card-img-top" alt="Phone Image" height="200">
-      <div class="card-body">
-        <h5 class="card-title text-center">iPhone</h5>
-        <div class="row row-col-2">
-            <div class="col-6">Model = Pro max</div>
-            <div class="col-6">RAM = 8GB</div>
-            <div class="col-6">Storage = 256GB</div>
-            <div class="col-6">Camera = 20MP</div>
-            <div class="col-6">Selfie = 5MP</div>
-            <div class="col-6">Color = Red</div>
-            <div class="col-6">OS = Apple</div>
-            <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
-            <div class="col-6"><b>Price = 500 Birr</b></div>
-        </div>
-      </div>
-  </div>
+<div class="col ">
+<div class="card fixed-height-card  card-width mt-3" >
+<img src="../Images/carousel_4.jpg" class="card-img-top img-fluid" alt="Phone Image"  >
+<div class="card-body">
+<h5 class="card-title text-center">iPhone</h5>
+<div class="row row-col-2 fontsize">
+<div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 available" ><b>Available</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+</div>
+</div>
+</div>
 </div>
 
 
 
-
-<div class="col-4">
-    <div class="card" style="width: 25rem;">
-      <img src="../Images/carousel_1.jpg" class="card-img-top" alt="Phone Image" height="200">
-      <div class="card-body">
-        <h5 class="card-title text-center">iPhone</h5>
-        <div class="row row-col-2">
-            <div class="col-6">Model = Pro max</div>
-            <div class="col-6">RAM = 8GB</div>
-            <div class="col-6">Storage = 256GB</div>
-            <div class="col-6">Camera = 20MP</div>
-            <div class="col-6">Selfie = 5MP</div>
-            <div class="col-6">Color = Red</div>
-            <div class="col-6">OS = Apple</div>
-            <div class="col-6" style="color: rgb(5, 255, 5);"><b>Available</b></div>
-            <div class="col-6"><b>Price = 500 Birr</b></div>
-        </div>
+<div class="col">
+  <div class="card fixed-height-card card-width mt-3">
+    <img src="../Images/carousel_1.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+    <div class="card-body">
+      <h5 class="card-title text-center">iPhone</h5>
+      <div class="row row-col-2 fontsize">
+          <div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 sold" ><b>Sold</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
       </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="col">
+<div class="card fixed-height-card card-width mt-3" >
+<img src="../Images/carousel_2.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+<div class="card-body">
+  <h5 class="card-title text-center">iPhone</h5>
+  <div class="row row-col-2 fontsize">
+    <div class="col-7">Model = Pro max</div>
+    <div class="col-5">RAM = 8GB</div>
+    <div class="col-7">Storage = 256GB</div>
+    <div class="col-5">Camera = 20MP</div>
+    <div class="col-7">Selfie = 5MP</div>
+    <div class="col-5">Color = Red</div>
+    <div class="col-7">OS = Apple</div>
+    <div class="col-5 available" ><b>Available</b></div>
+    <div class="col-7"><b>Price = 500 Birr</b></div>
   </div>
 </div>
+</div>
+</div>
+
+
+
+<div class="col ">
+<div class="card fixed-height-card  card-width mt-3" >
+<img src="../Images/carousel_4.jpg" class="card-img-top img-fluid" alt="Phone Image"  >
+<div class="card-body">
+<h5 class="card-title text-center">iPhone</h5>
+<div class="row row-col-2 fontsize">
+<div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 available" ><b>Available</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col">
+  <div class="card fixed-height-card card-width mt-3">
+    <img src="../Images/carousel_1.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+    <div class="card-body">
+      <h5 class="card-title text-center">iPhone</h5>
+      <div class="row row-col-2 fontsize">
+          <div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 sold" ><b>Sold</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="col">
+<div class="card fixed-height-card card-width mt-3" >
+<img src="../Images/carousel_2.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+<div class="card-body">
+  <h5 class="card-title text-center">iPhone</h5>
+  <div class="row row-col-2 fontsize">
+    <div class="col-7">Model = Pro max</div>
+    <div class="col-5">RAM = 8GB</div>
+    <div class="col-7">Storage = 256GB</div>
+    <div class="col-5">Camera = 20MP</div>
+    <div class="col-7">Selfie = 5MP</div>
+    <div class="col-5">Color = Red</div>
+    <div class="col-7">OS = Apple</div>
+    <div class="col-5 available" ><b>Available</b></div>
+    <div class="col-7"><b>Price = 500 Birr</b></div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col ">
+<div class="card fixed-height-card  card-width mt-3" >
+<img src="../Images/carousel_4.jpg" class="card-img-top img-fluid" alt="Phone Image"  >
+<div class="card-body">
+<h5 class="card-title text-center">iPhone</h5>
+<div class="row row-col-2 fontsize">
+<div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 available" ><b>Available</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col">
+  <div class="card fixed-height-card card-width mt-3">
+    <img src="../Images/carousel_1.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+    <div class="card-body">
+      <h5 class="card-title text-center">iPhone</h5>
+      <div class="row row-col-2 fontsize">
+          <div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 sold" ><b>Sold</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="col">
+<div class="card fixed-height-card card-width mt-3" >
+<img src="../Images/carousel_2.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+<div class="card-body">
+  <h5 class="card-title text-center">iPhone</h5>
+  <div class="row row-col-2 fontsize">
+    <div class="col-7">Model = Pro max</div>
+    <div class="col-5">RAM = 8GB</div>
+    <div class="col-7">Storage = 256GB</div>
+    <div class="col-5">Camera = 20MP</div>
+    <div class="col-7">Selfie = 5MP</div>
+    <div class="col-5">Color = Red</div>
+    <div class="col-7">OS = Apple</div>
+    <div class="col-5 available" ><b>Available</b></div>
+    <div class="col-7"><b>Price = 500 Birr</b></div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col ">
+<div class="card fixed-height-card  card-width mt-3" >
+<img src="../Images/carousel_4.jpg" class="card-img-top img-fluid" alt="Phone Image"  >
+<div class="card-body">
+<h5 class="card-title text-center">iPhone</h5>
+<div class="row row-col-2 fontsize">
+<div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 available" ><b>Available</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col">
+  <div class="card fixed-height-card card-width mt-3">
+    <img src="../Images/carousel_1.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+    <div class="card-body">
+      <h5 class="card-title text-center">iPhone</h5>
+      <div class="row row-col-2 fontsize">
+          <div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 sold" ><b>Sold</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="col">
+<div class="card fixed-height-card card-width mt-3" >
+<img src="../Images/carousel_2.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+<div class="card-body">
+  <h5 class="card-title text-center">iPhone</h5>
+  <div class="row row-col-2 fontsize">
+    <div class="col-7">Model = Pro max</div>
+    <div class="col-5">RAM = 8GB</div>
+    <div class="col-7">Storage = 256GB</div>
+    <div class="col-5">Camera = 20MP</div>
+    <div class="col-7">Selfie = 5MP</div>
+    <div class="col-5">Color = Red</div>
+    <div class="col-7">OS = Apple</div>
+    <div class="col-5 available" ><b>Available</b></div>
+    <div class="col-7"><b>Price = 500 Birr</b></div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col ">
+<div class="card fixed-height-card  card-width mt-3" >
+<img src="../Images/carousel_4.jpg" class="card-img-top img-fluid" alt="Phone Image"  >
+<div class="card-body">
+<h5 class="card-title text-center">iPhone</h5>
+<div class="row row-col-2 fontsize">
+<div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 available" ><b>Available</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col">
+  <div class="card fixed-height-card card-width mt-3">
+    <img src="../Images/carousel_1.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+    <div class="card-body">
+      <h5 class="card-title text-center">iPhone</h5>
+      <div class="row row-col-2 fontsize">
+          <div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 sold" ><b>Sold</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="col">
+<div class="card fixed-height-card card-width mt-3" >
+<img src="../Images/carousel_2.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+<div class="card-body">
+  <h5 class="card-title text-center">iPhone</h5>
+  <div class="row row-col-2 fontsize">
+    <div class="col-7">Model = Pro max</div>
+    <div class="col-5">RAM = 8GB</div>
+    <div class="col-7">Storage = 256GB</div>
+    <div class="col-5">Camera = 20MP</div>
+    <div class="col-7">Selfie = 5MP</div>
+    <div class="col-5">Color = Red</div>
+    <div class="col-7">OS = Apple</div>
+    <div class="col-5 available" ><b>Available</b></div>
+    <div class="col-7"><b>Price = 500 Birr</b></div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col ">
+<div class="card fixed-height-card  card-width mt-3" >
+<img src="../Images/carousel_4.jpg" class="card-img-top img-fluid" alt="Phone Image"  >
+<div class="card-body">
+<h5 class="card-title text-center">iPhone</h5>
+<div class="row row-col-2 fontsize">
+<div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 available" ><b>Available</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col">
+  <div class="card fixed-height-card card-width mt-3">
+    <img src="../Images/carousel_1.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+    <div class="card-body">
+      <h5 class="card-title text-center">iPhone</h5>
+      <div class="row row-col-2 fontsize">
+          <div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 sold" ><b>Sold</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="col">
+<div class="card fixed-height-card card-width mt-3" >
+<img src="../Images/carousel_2.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+<div class="card-body">
+  <h5 class="card-title text-center">iPhone</h5>
+  <div class="row row-col-2 fontsize">
+    <div class="col-7">Model = Pro max</div>
+    <div class="col-5">RAM = 8GB</div>
+    <div class="col-7">Storage = 256GB</div>
+    <div class="col-5">Camera = 20MP</div>
+    <div class="col-7">Selfie = 5MP</div>
+    <div class="col-5">Color = Red</div>
+    <div class="col-7">OS = Apple</div>
+    <div class="col-5 available" ><b>Available</b></div>
+    <div class="col-7"><b>Price = 500 Birr</b></div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col ">
+<div class="card fixed-height-card  card-width mt-3" >
+<img src="../Images/carousel_4.jpg" class="card-img-top img-fluid" alt="Phone Image"  >
+<div class="card-body">
+<h5 class="card-title text-center">iPhone</h5>
+<div class="row row-col-2 fontsize">
+<div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 available" ><b>Available</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col">
+  <div class="card fixed-height-card card-width mt-3">
+    <img src="../Images/carousel_1.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+    <div class="card-body">
+      <h5 class="card-title text-center">iPhone</h5>
+      <div class="row row-col-2 fontsize">
+          <div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 sold" ><b>Sold</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="col">
+<div class="card fixed-height-card card-width mt-3" >
+<img src="../Images/carousel_2.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+<div class="card-body">
+  <h5 class="card-title text-center">iPhone</h5>
+  <div class="row row-col-2 fontsize">
+    <div class="col-7">Model = Pro max</div>
+    <div class="col-5">RAM = 8GB</div>
+    <div class="col-7">Storage = 256GB</div>
+    <div class="col-5">Camera = 20MP</div>
+    <div class="col-7">Selfie = 5MP</div>
+    <div class="col-5">Color = Red</div>
+    <div class="col-7">OS = Apple</div>
+    <div class="col-5 available" ><b>Available</b></div>
+    <div class="col-7"><b>Price = 500 Birr</b></div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col ">
+<div class="card fixed-height-card  card-width mt-3" >
+<img src="../Images/carousel_4.jpg" class="card-img-top img-fluid" alt="Phone Image"  >
+<div class="card-body">
+<h5 class="card-title text-center">iPhone</h5>
+<div class="row row-col-2 fontsize">
+<div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 available" ><b>Available</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col">
+  <div class="card fixed-height-card card-width mt-3">
+    <img src="../Images/carousel_1.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+    <div class="card-body">
+      <h5 class="card-title text-center">iPhone</h5>
+      <div class="row row-col-2 fontsize">
+          <div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 sold" ><b>Sold</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="col">
+<div class="card fixed-height-card card-width mt-3" >
+<img src="../Images/carousel_2.jpg" class="card-img-top img-fluid" alt="Phone Image" >
+<div class="card-body">
+  <h5 class="card-title text-center">iPhone</h5>
+  <div class="row row-col-2 fontsize">
+    <div class="col-7">Model = Pro max</div>
+    <div class="col-5">RAM = 8GB</div>
+    <div class="col-7">Storage = 256GB</div>
+    <div class="col-5">Camera = 20MP</div>
+    <div class="col-7">Selfie = 5MP</div>
+    <div class="col-5">Color = Red</div>
+    <div class="col-7">OS = Apple</div>
+    <div class="col-5 available" ><b>Available</b></div>
+    <div class="col-7"><b>Price = 500 Birr</b></div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col ">
+<div class="card fixed-height-card  card-width mt-3" >
+<img src="../Images/carousel_4.jpg" class="card-img-top img-fluid" alt="Phone Image"  >
+<div class="card-body">
+<h5 class="card-title text-center">iPhone</h5>
+<div class="row row-col-2 fontsize">
+<div class="col-7">Model = Pro max</div>
+          <div class="col-5">RAM = 8GB</div>
+          <div class="col-7">Storage = 256GB</div>
+          <div class="col-5">Camera = 20MP</div>
+          <div class="col-7">Selfie = 5MP</div>
+          <div class="col-5">Color = Red</div>
+          <div class="col-7">OS = Apple</div>
+          <div class="col-5 available" ><b>Available</b></div>
+          <div class="col-7"><b>Price = 500 Birr</b></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
 
 
     </div>
@@ -228,6 +754,68 @@
 </div>
 
 
-<br><br><br><br><br><br><br>
+
+
+<footer class="container-fluid bg-dark text-light mt-4" id="contact" >
+  <div class="container">
+      <div class="row">
+          <!-- Column 1 -->
+          <div class="col-md-4">
+              <h5>Company Name</h5>
+              <p>123 Company St, Cityville, Country</p>
+              <p>Phone: +1 (123) 456-7890</p>
+              <p>Email: info@example.com</p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-4">
+              <h5>Connect with Us</h5>
+              <p>
+                  <a href="#" target="_blank">Facebook</a><br>
+                  <a href="#" target="_blank">LinkedIn</a><br>
+                  <a href="#" target="_blank">TikTok</a>
+              </p>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-4">
+              <h5>Follow Us on Social Media</h5>
+              <p>
+                  <a href="#" target="_blank">YouTube</a><br>
+                  <a href="#" target="_blank">Instagram</a><br>
+                  <a href="#" target="_blank">WhatsApp</a><br>
+                  <a href="#" target="_blank">Viber</a>
+              </p>
+          </div>
+      </div>
+
+      <div class="container" id="about">
+        <h1 class="text-center">Who Are We ?</h1>
+        Title: Elevating Your Shopping Experience: Discover the World of Technology at Our Phone Store
+
+        In the fast-paced world of technology, staying connected has become an integral part of our daily lives. At [Your Phone Store Name], we understand the significance of reliable and cutting-edge communication tools. As a premier destination for all your mobile needs, we are dedicated to providing you with an unparalleled shopping experience. Our commitment to excellence extends to every aspect of our services, including the meticulously designed footer of our website.
+        
+        **Discover Our Roots:**
+        Founded with a passion for innovation and customer satisfaction, [Your Phone Store Name] has emerged as a go-to destination for those seeking the latest smartphones, accessories, and exceptional service. Our journey began with a vision to create a space where technology enthusiasts and casual users alike could find the perfect device to complement their lifestyle.
+        
+        **Connect with Us:**
+        In the footer of our website, we invite you to connect with us on a more personal level. Explore the details of our physical store, located at [123 Tech Street, Cityville, Country], ensuring that you can always find your way to the latest gadgets. For immediate assistance, our dedicated customer support team is just a phone call away at [+1 (123) 456-7890], or you can drop us an email at [info@yourphonestore.com].
+        
+        **Social Media Integration:**
+        Stay in the loop with the latest tech trends by following us on our social media platforms. In the footer, you'll find quick links to our official pages on Facebook, LinkedIn, and TikTok, where we share insights, product launches, and engage with our vibrant community of tech enthusiasts.
+        
+        **Stay Connected Anytime, Anywhere:**
+        Our commitment to connectivity extends beyond devices. Join us on YouTube for exclusive product reviews and demonstrations, follow our Instagram for a visual feast of the latest gadgets, and connect with us on WhatsApp and Viber for instant updates on promotions and deals.
+        
+        **Elevate Your Shopping Experience:**
+        At [Your Phone Store Name], we believe that a seamless shopping experience is just as important as the devices we offer. Our meticulously designed website footer reflects our dedication to providing you with easy access to essential information. Whether you're looking for our physical store address, want to reach out for assistance, or are eager to join our online community, our footer is your gateway to an enriched shopping journey.
+        
+        **Conclusion:**
+        Explore the world of technology with confidence, knowing that [Your Phone Store Name] is here to elevate your mobile experience. From the latest smartphones to unparalleled customer service, our commitment to excellence extends to every corner of our website, including the thoughtfully crafted footer. Connect with us, stay informed, and embark on a journey of innovation and connectivity. Welcome to [Your Phone Store Name]—where your tech dreams become a reality.
+        <br><br> <br><br> <br><br>
+      </div>
+  </div>
+</footer>
+
 </body>
 </html>
